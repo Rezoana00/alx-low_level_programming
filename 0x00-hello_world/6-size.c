@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-
-
 /**
 *
 * main - Entry point
@@ -11,7 +9,6 @@
 */
 int main(void)
 {
-
 int a;
 long int b;
 long long int c;
