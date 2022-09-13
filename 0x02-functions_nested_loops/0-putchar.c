@@ -1,33 +1,69 @@
-#include "main.h"
+#include <stdlib.h>
+
+#include <time.h>
+
+#include <stdio.h>
+
+
 
 /**
  *
- **main - Entry point
+ *  * main - Entry point
  *
- **
+ *   *
  *
- **Return: nothing, return void
+ *    * Return: Always 0 (Successs/correct)
  *
- **/
+ *     */
+
+
+
 int main(void)
+
 {
-	_putchar('_');
 
-	_putchar('p');
+	int n;
 
-	_putchar('u');
 
-	_putchar('t');
 
-	_putchar('c');
+	srand(time(0));
 
-	_putchar('h');
+	n = rand() - RAND_MAX / 2;
 
-	_putchar('a');
 
-	_putchar('r');
 
-	_putchar('\n');
+	if (n == 0)
+
+	{
+
+		printf("%i is zero\n", n);
+
+	}
+
+
+
+	else if (n < 0)
+
+	{
+
+		printf("%i is negative\n", n);
+
+	}
+
+
+
+	else
+
+	{
+
+		printf("%i is positive\n", n);
+
+	}
+
+
 
 	return (0);
-}		
+
+
+
+}
