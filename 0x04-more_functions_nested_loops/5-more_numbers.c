@@ -6,12 +6,14 @@
  ** Return: Always 0.
  *
  **/
+
 void more_numbers(void)
 {
 	int i;
 	int first_number;
 	int second_number;
 	int result;
+
 	i = 0;
 	result = 0;
 	while (i < 10)
@@ -29,11 +31,15 @@ void more_numbers(void)
 				second_number = result % 10;
 				_putchar (first_number + '0');
 			}
-			_putchar (second_number + '0');
+
+		        _putchar (second_number + '0');
+
 			result++;
 		}
 		i++;
 		result = 0;
 		_putchar ('\n');
 	}
+
+}
 
